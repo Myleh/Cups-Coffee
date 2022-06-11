@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+	@font-face {
+		font-family: 'miso regular';
+		src: url('../css/fonts/miso/miso.eot');
+		src: url('../css/fonts/miso/miso.eot?#iefix') format('embedded-opentype'),
+			 url('../css/fonts/miso/miso.woff2') format('woff2'),
+			 url('../css/fonts/miso/miso.woff') format('woff'),
+			 url('../css/fonts/miso/miso.ttf') format('truetype'),
+			 url('../css/fonts/miso/miso.svg#misoruregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	
+	}
+
+	@font-face {
+		font-family: 'miso bold';
+		src: url('../css/fonts/miso-bold/miso-bold.eot');
+		src: url('../css/fonts/miso-bold/miso-bold.eot?#iefix') format('embedded-opentype'),
+			 url('../css/fonts/miso-bold/miso-bold.woff2') format('woff2'),
+			 url('../css/fonts/miso-bold/miso-bold.woff') format('woff'),
+			 url('../css/fonts/miso-bold/miso-bold.ttf') format('truetype'),
+			 url('../css/fonts/miso-bold/miso-bold.svg#misobold') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	
+	}
+:root {
+	--color-price: #02995b;
+	--font-miso: 'miso regular', sans-serif;
+	--font-misobold: 'miso bold', sans-serif;
+	--font-lato: 'Lato', sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+/* Main Styles */
+body {
+	background: #fdde7e;
+	color: #414141;
+}
+.comtainer {
+	max-width: 1260px;
+	min-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px 30px;
+}
+.cups {
+	display: flex;
+	flex-wrap:wrap;
+	align-items: center;
+}
+.cup {
+	background: #fff;
+	flex-basis: 360px;
+	border-radius: 5px;
+	box-shadow: 0px 3px 12px -5px rgb(0 0 0 / 20%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 15px 20px;
+	padding: 40px 0;
+	transition: all .3s;
+	cursor: pointer;
+}
+.cup:hover {
+	transform: scale(1.05);
+	
+}
+.cup:nth-child(2) {
+	padding: 60px 0;
+}
+.cup:nth-child(2) .price {
+	margin-bottom: 45px;
+}
+.price {
+	margin-bottom: 25px;
+	color: var(--color-price);
+	font-size: 70px;
+	font-weight: 700;
+	font-family: var(--font-misobold) ;
+}
+img {
+	margin-bottom: 40px;
+}
+.cup__color {
+	margin-bottom: 35px;
+	font-size: 55px;
+	font-weight: 500;
+	font-family: var(--font-miso);
+}
+.cup__tittle {
+	font-size: 20px;
+	line-height: 25px;
+	font-family: var(--font-lato);
+	max-width: 150px;
+	text-align: center ;
+}
+
